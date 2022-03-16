@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Multiple Object Detection</title>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Multiple Object Detection</h1>
+    <h3>This project aims in the detection of multiple objects at once using a pre trained model in TensorFlow.js</h3>
+    <div id="console"></div>
+
+    <p id="text_id">Note: The webcam button will be enabled after the model is loaded.</p>
+    <section id="demos" class="invisible">
+
+        <div id="liveView" class="camView">
+            <button id="webcamButton">Enable Webcam</button>
+            <video id="webcam" autoplay muted width="640" height="480"></video>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
